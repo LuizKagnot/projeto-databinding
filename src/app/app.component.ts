@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import {Cliente} from './clientes/clientes.model';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'projeto-databinding';
+clientes: Cliente[] = [];
+onClienteAdicionado(cliente) {
+this.clientes = [...this.clientes, cliente];
+}
 }

@@ -1,0 +1,21 @@
+<mat-card>
+<mat-form-field>
+  <input type="text" matInput placeholder="Id" [(ngModel)]="nome" />
+  </mat-form-field>
+  <hr />
+  <mat-form-field>
+  <input type="text" matInput placeholder="Titulo" [(ngModel)]="fone" />
+  </mat-form-field>
+  <hr />
+  <mat-form-field>
+  <input type="text" matInput placeholder="Autor" [(ngModel)]="email" />
+  </mat-form-field>
+  <hr />
+  <mat-form-field>
+    <input type="text" matInput placeholder="Numero de Paginas" [(ngModel)]="numero" />
+    </mat-form-field>
+    <hr />
+  <button color="primary" mat-raised-button (click)="onAdicionarCLiente()">
+    Inserir Cliente
+  </button>
+</mat-card>
